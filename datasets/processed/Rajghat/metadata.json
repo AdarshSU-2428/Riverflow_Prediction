@@ -1,0 +1,53 @@
+{
+    "station": "Rajghat",
+    "lookback_days": 30,
+    "forecast_horizon_days": 5,
+    "features": [
+        "Discharge",
+        "Rainfall",
+        "Rain_3d",
+        "Discharge_lag1",
+        "Rain_lag1",
+        "DayOfYear",
+        "Rainfall_observed",
+        "Discharge_observed"
+    ],
+    "target": "Discharge",
+    "train_end": "2015-12-31",
+    "validation_start": "2016-01-01",
+    "validation_end": "2018-12-31",
+    "test_start": "2019-01-01",
+    "test_end": "2021-11-30",
+    "X_train_shape": [
+        5288,
+        30,
+        8
+    ],
+    "y_train_shape": [
+        5288,
+        5
+    ],
+    "X_val_shape": [
+        727,
+        30,
+        8
+    ],
+    "y_val_shape": [
+        727,
+        5
+    ],
+    "X_test_shape": [
+        1061,
+        30,
+        8
+    ],
+    "y_test_shape": [
+        1061,
+        5
+    ],
+    "processed_csv_files": [
+        "train_processed.csv",
+        "val_processed.csv",
+        "test_processed.csv"
+    ]
+}
